@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Auto Tab Closer",
+  "description": "Closes browser tabs that were last accessed more than 3 minutes ago, with domain exclusion support.",
+  "version": "1.1",
+  "permissions": [
+    "tabs",
+    "alarms",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}

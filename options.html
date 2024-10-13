@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Tab Closer - Options</title>
+</head>
+<body>
+  <h1>Excluded Domains</h1>
+  <p>Add domains (e.g., example.com) to exclude from being automatically closed:</p>
+
+  <input type="text" id="domainInput" placeholder="Enter domain">
+  <button id="addDomainButton">Add Domain</button>
+
+  <h2>Excluded Domains List</h2>
+  <ul id="excludedDomainsList"></ul>
+
+  <h2>Set Tab Closing Time Limit (in minutes)</h2>
+  <input type="number" id="timeLimitInput" min="1" placeholder="Enter time in minutes">
+  <button id="setTimeLimitButton">Set Time Limit</button>
+  <p>Default is 480 minutes (8 hours).</p>
+
+  <script src="options.js"></script>
+</body>
+</html>
