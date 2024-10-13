@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const setTimeLimitButton = document.getElementById('setTimeLimitButton');
 
   // Load existing excluded domains and time limit (in minutes)
-  chrome.storage.sync.get({ excludedDomains: [], timeLimit: 480 }, (result) => {
+  chrome.storage.sync.get({ excludedDomains: [], timeLimit: 3 }, (result) => {
     const excludedDomains = result.excludedDomains || [];
-    const timeLimit = result.timeLimit || 480;
+    const timeLimit = result.timeLimit || 3;
 
     // Display the saved time limit
     timeLimitInput.value = timeLimit;
